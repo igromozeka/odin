@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/contacts.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <!-- Creating a navigation bar -->
+    <header>
+        <nav>
+            <div class="container_navigation_bar"> <!-- Creating a container/Создаём панель навигации -->
+                <div class="navigation_bar">
+                    <ul>
+                        <li><a href="./main.html">Main</a></li>
+                        <!-- Adding the home page button/Добавляем кнопку "Домашняя страница" -->
+                        <li><a href="./potfolio.html">Portfolio</a></li>
+                        <!-- Adding the portfolio button/Добавляем кнопку "Портфолио" -->
+                        <li><a href="./about_me.html">About me</a></li>
+                        <!-- Adding a photo gallery button/Добавляем кнопку "Фото галерея" -->
+                        <li class="active"><a href="#">Contacts</a></li>
+                        <!-- Adding the contacts button/Добавляем кнопку "Контакты" -->
+                        <li><a href="./index.html">Just me</a></li>
+                        <!-- Adding the just me button/Добавляем кнопку "Только я" -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- <form class="first_block_container"> -->
+        <div class="container_cards">
+            <div class="slide slide-prev">
+                <img class="images Krasnoyarsk" src="img/Krasnoyarsk.jpeg" alt="Krasnoyarsk" />
+                <p class="slider-text">Krasnoyarsk</p>
+            </div>
+            <div class="slide slide-active">
+                <img class="images main_post_office" src="./img/main post office.jpg" alt="main_post_office" />
+                <p class="slider-text">24reg@mail.ru</p>
+            </div>
+            <div class="slide slide-next">
+                <img class="images telephone_booth" src="./img/Phone.jpg" alt="telephone_booth" />
+                <p class="slider-text">+7 (923) 335-1084</p>
+            </div>
+        </div>
+        <div class="actions">
+            <button type="submit" class="btn button-left"></button>
+            <button type="submit" class="btn button-right"></button>
+        </div>
+        <!-- </form> -->
+
+        <!-- Форма обратной связи -->
+
+        <form class="second_block">
+            <div class="container_content">
+                <div class="content">
+                    <div class="left-side">
+                        <div class="address details">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                            <div class="topic">Адрес</div>
+                            <div class="text_1">г. Красноярск</div>
+                            <div class="text_2">ул. Светлова, 7/1</div>
+                        </div>
+                        <div class="phone details">
+                            <i class="fa-solid fa-phone-volume"></i>
+                            <div class="topic">Телефон</div>
+                            <div class="text_1">+7 (923) 335-1084</div>
+                        </div>
+                        <div class="email details">
+                            <i class="fa-solid fa-at"></i>
+                            <div class="topic">E-mail</div>
+                            <div class="text_1">24reg@mail.ru</div>
+                        </div>
+                    </div>
+                    <div class="right-side">
+                        <div class="topic-text">Отправьте нам сообщение</div>
+                        <p class="topic-text_1">
+                            Если у Вас есть какие-то вопросы или предложения по сотрудничеству, пожалуйста
+                            заполните форму ниже.
+                        </p>
+        </form>
+        <form action="#">
+            <div class="input-box">
+                <input type="text" id="todo-name-input" placeholder="Ваше имя" />
+            </div>
+            <div class="input-box">
+                <input type="text" id="todo-email-input" placeholder="Введите e-mail" />
+            </div>
+            <div class="input-box">
+                <input type="text" id="todo-phone-input" placeholder="Введите телефон" />
+            </div>
+            <div class="input-box message-box">
+                <textarea type="text" id="todo-message-input" placeholder="Сообщение"></textarea>
+            </div>
+            <div class="button">
+                <input type="button" id="todo-add-button" value="Отправить" />
+            </div>
+        </form>
+        </div>
+        </div>
+        </div>
+    </main>
+
+    <footer class="third_block">
+        <div class="container_footer">
+            <div class="footer_roman_grigorev">&copy;Roman Grigorev @Grigoga 2023, All rights reserved.</div>
+            <ul class="social_icons">
+                <div class="social_network"></div>
+                <li> <a class="fa-brands fa-vk fa-2x"></a></li>
+                <li> <a class="fa-brands fa-viber fa-2x"></a></li>
+                <li> <a class="fa-brands fa-telegram fa-2x"></a></li>
+                <li> <a class="fa-brands fa-whatsapp fa-2x"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Подключение шрифтовых иконок, можно получить на fontawesome.com -->
+    <script src="https://kit.fontawesome.com/1f8df4c552.js" crossorigin="anonymous"></script>
+
+
+    <script src="js/contacts.js"></script>
+
+</body>
+
+</html>

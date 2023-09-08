@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Main</title>
+</head>
+
+<body>
+    <!-- Creating a navigation bar -->
+    <header>
+        <nav>
+            <div class="container_navigation_bar"> <!-- Creating a container/Создаём панель навигации -->
+                <div class="navigation_bar">
+                    <ul>
+                        <li class="active"><a href="#">Main</a></li>
+                        <!-- Adding the home page button/Добавляем кнопку "Домашняя страница" -->
+                        <li><a href="./potfolio.html">Portfolio</a></li>
+                        <!-- Adding the portfolio button/Добавляем кнопку "Портфолио" -->
+                        <li><a href="./about_me.html">About me</a></li>
+                        <!-- Adding a photo gallery button/Добавляем кнопку "Фото галерея" -->
+                        <li><a href="./contacts.html">Contacts</a></li>
+                        <!-- Adding the contacts button/Добавляем кнопку "Контакты" -->
+                        <li><a href="./index.html">Just me</a></li>
+                        <!-- Adding the just me button/Добавляем кнопку "Только я" -->
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <form class="first_block_container">
+            <div class="shell_description">
+                <div class="basic_description">
+                    <h1 class="my_last_name_and_first_name">GRIGOREV<br><span class="enlarge_the_title">ROMAN</span>
+                    </h1>
+                    <p class="my_description_text">Hi! As you have already understood, my name is Roman Grigoriev. I am
+                        a happy father and husband. My goal is to master the specialty of a web developer. I like to
+                        study code, and I am ready to get additional knowledge from a talented mentor. My ambitions
+                        allow me to strive for this. For more information, click the button below.</p>
+                    <div class="about_me_button_1">
+                        <a class="about_me_button" href="./about_me.html">About me</a>
+                    </div>
+                </div>
+                <div>
+                    <a href="./about_me.html">
+                        <img class="photo_with_me" src="./img/_DSC0454.JPG" alt="my_photo">
+                    </a>
+                </div>
+            </div>
+        </form>
+
+        <form action="">
+            <div class="subscription_block">
+                <h2>Design tips, tricks and freebies. Updated weekly.</h2>
+                <p>If you have something to share with me, I would be grateful to receive this advice from you.
+                    After
+                    all, it's never too late to learn.</p>
+                <div class="e-mail">
+                    <form action="URL" method="GET">
+                        <input class="input_email" type="email" required="required" name="email"
+                            placeholder="Email adress...">
+                        <button class="subscribe">Subscribe</button>
+                    </form>
+                </div>
+            </div>
+        </form>
+    </main>
+
+    <footer>
+
+        <div class="container">
+            <div class="footer_roman_grigorev">&copy;Roman Grigorev @Grigoga 2023, All rights reserved.</div>
+            <ul class="social_icons">
+                <div class="social_network"></div>
+                <li> <a class="fa-brands fa-vk fa-2x"></a></li>
+                <li> <a class="fa-brands fa-viber fa-2x"></a></li>
+                <li> <a class="fa-brands fa-telegram fa-2x"></a></li>
+                <li> <a class="fa-brands fa-whatsapp fa-2x"></a></li>
+            </ul>
+        </div>
+    </footer>
+
+
+    <!-- Подключение шрифтовых иконок, можно получить на fontawesome.com -->
+    <script src="https://kit.fontawesome.com/1f8df4c552.js" crossorigin="anonymous"></script>
+
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,521 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+/* setting up the navigation bar/настройка навигационной панели */
+
+.active {
+    background: #f00e0e;
+}
+
+* {
+    /* универсальный селектор для одинакового отображения во всех браузерах */
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.container_navigation_bar {
+    margin: 0 auto;
+    background-color: #747474;
+    /* padding-top: 25px; */
+    /* опускаем ниже навигационную панель */
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+}
+
+header {
+    margin: 0 auto;
+    background-color: #747474;
+}
+
+.navigation_bar>ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    list-style: none;
+}
+
+.navigation_bar>ul>li {
+    display: flex;
+    justify-content: center;
+    min-width: 120px;
+    padding: 22.5px 0px 22.5px 0px;
+    margin: 0 60px;
+}
+
+.navigation_bar>ul>li:hover {
+    background-color: #b9951e;
+}
+
+.navigation_bar>ul>li>a {
+    text-decoration: none;
+    /* убираем нижнее подчёркивание ссылок */
+    font-size: 22px;
+    /* задаём размер шрифта */
+    color: #e0e0e0;
+    /* задаём цвет текста */
+}
+
+/* ********************Слайдер************************* */
+
+/* configuring the first container block/настройка первого блока контейнера */
+
+.first_block_container {
+    background-color: #0f0f0f;
+    /* min-height: 576px; */
+}
+
+.container_cards {
+    /* max-width: 1366px; */
+    background-color: #1f242d;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    padding-top: 150px;
+    margin: 0 auto;
+    transition: transform 0.5s;
+}
+
+.slide {
+    background-image: url('/img/main\ banner.png');
+    /* фоновое изображение */
+    background-repeat: no-repeat;
+    /* изображение не повторяется */
+    background-size: cover;
+    /* масштабируем фоновое изображение */
+    border-radius: 34px 34px 10px 10px;
+    /* скругляем углы */
+    display: flex;
+    /* центрирование по вертикали и горизонтали  */
+    align-items: center;
+    /* центрирование по вертикали и горизонтали  */
+    justify-content: space-around;
+    /* центрирование по вертикали и горизонтали  */
+    flex-direction: column;
+    /* центрирование по вертикали и горизонтали  */
+    opacity: 0.5;
+    /* прозрачность элементов */
+    line-height: normal;
+    width: 288px;/* ширина элемента */
+    height: 192px;/* высота элемента */
+    transition: 1.5s ease;
+    /* время перехода между слайдами */
+    position: absolute;
+    /* позиционирование слайдов */
+}
+
+.images {
+    width: 200px;
+    /* устанавливаем ширину элемента */
+    height: 120px;
+    /* устанавливаем высоту элемента */
+}
+
+.slider-text {    
+    font-family: 'Open Sans', sans-serif;
+    font-style: italic;
+    font-weight: 600;
+    font-size: 20px;
+    margin-top: -20px;
+    /* позиционируем надпись */
+    color: #e0e0e0;
+    /* задаём цвет шрифта */
+}
+
+.actions {
+    background-color: #1f242d;
+    text-align: center;
+    /* содержимое центрируется в линейном блоке */
+    display: flex;
+    /* превращаем этот элемент во флекс-контейнер */
+    justify-content: center;
+    /* располагаем элементы друг за другом в центре контейнера по главной оси */
+    gap: 10%;
+    /* задаём отступ между элементами */
+    height: 100px;
+}
+
+.button-left {
+    background-image: url('/icons/arrow-left-circle-svgrepo-com.svg');
+    /* указываем путь к картинке, иконка до наведения */
+    background-repeat: no-repeat;
+    /* указываем, чтобы изображение не повторялось */
+    background-size: contain;
+    /* масштабируем картинку в блок с сохранением пропорций */
+    transition: ease 0.5s;
+    /* время перехода из одного состояния в другое */
+    width: 46px;
+    /* устанавливаем ширину блока для картинки */
+    height: 46px;
+    /* устанавливаем высоту блока для картинки */
+    background-color: #e0e0e0;
+    /* задаём цвет элементу */
+    border-radius: 22px;
+    /* скругляем границы блока */
+}
+
+.button-left:hover {
+    background-image: url('/icons/arrow-left-square-svgrepo-com.svg');
+    /* иконка при наведении */
+    background-repeat: no-repeat;
+    /* указываем, чтобы изображение не повторялось */
+    background-size: contain;
+    /* масштабируем картинку в блок с сохранением пропорций */
+    transition: ease 0.5s;
+    /* время перехода из одного состояния в другое */
+    width: 46px;
+    /* устанавливаем ширину блока для картинки */
+    height: 46px;
+    /* устанавливаем высоту блока для картинки */
+    background-color: #e0e0e0;
+    /* задаём цвет элементу */
+    border-radius: 22px;
+    /* скругляем границы блока */
+}
+
+.button-right {
+    background-image: url('/icons/arrow-right-circle-svgrepo-com.svg');
+    /* иконка до наведения */
+    background-repeat: no-repeat;
+    /* указываем, чтобы изображение не повторялось */
+    background-size: contain;
+    /* масштабируем картинку в блок с сохранением пропорций */
+    transition: ease 0.5s;
+    /* время перехода из одного состояния в другое */
+    width: 46px;
+    /* устанавливаем ширину блока для картинки */
+    height: 46px;
+    /* устанавливаем высоту блока для картинки */
+    background-color: #e0e0e0;
+    /* задаём цвет элементу */
+    border-radius: 22px;
+    /* скругляем границы блока */
+}
+
+.button-right:hover {
+    background-image: url('/icons/arrow-right-square-svgrepo-com.svg');
+    /* иконка при наведении */
+    background-repeat: no-repeat;
+    /* указываем, чтобы изображение не повторялось */
+    background-size: contain;
+    /* масштабируем картинку в блок с сохранением пропорций */
+    transition: ease 0.5s;
+    /* время перехода из одного состояния в другое */
+    width: 46px;
+    /* устанавливаем ширину блока для картинки */
+    height: 46px;
+    /* устанавливаем высоту блока для картинки */
+    background-color: #e0e0e0;
+    /* задаём цвет элементу */
+    border-radius: 22px;
+    /* скругляем границы блока */
+}
+
+.slide-active {
+    transform: scale(2);
+    /* масштабирование элемента (0, 1, 2) */
+    opacity: 1;
+    /* устанавливаем непрозрачность элемента (от 0 до 1) */
+}
+
+.slide-next {
+    transform: translateX(320px);
+    /* translateX перемещает элемент горизонтально вправо (+) */
+}
+
+.slide-prev {
+    transform: translateX(-320px);
+    /* translateX перемещает элемент горизонтально влево (-) */
+}
+
+
+/* ***************++++++++++++++++************ Форма обратной связи:************++++++++++++++++**********  */
+
+.second_block {
+    background-color: #323946;
+    /* задаём цвет контейнера */
+}
+
+.fa-solid {
+    color: #747474;
+    /* задаём цвет иконок */
+}
+
+/* Ограничиваем контейнер по ширине 1152px */
+.container_content {
+    max-width: 1152px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 80px;
+    /* отступ снизу 80px */
+    align-items: center;
+    /* выравниваем по центру */
+}
+
+/* Стили самой формы */
+.content {
+    display: flex;
+    /* делаем колонки в ряд */
+    align-items: center;
+    /* выравниваем по центру */
+    /* background: rgba(253, 249, 244, 0.787); */
+    padding: 40px;
+    /* внутренний отступ */
+    background-color: #1f242d;
+    border-radius: 10px;
+    box-shadow: 2px 2px 4px 4px #e0e0e0;
+}
+
+/* Стили левой колонки */
+.left-side {
+    width: 25%;
+    /* занимает 25% общей ширины */
+    height: 100%;
+    /* растягиваем на всю высоту */
+    position: relative;
+    /* позиционирование относительное (для ::before) */
+    flex-direction: column;
+    /* внутри элементы располагаем в колонку */
+}
+
+/* Стили разделительной линии между левой и правой колонкой */
+.left-side::before {
+    content: "";
+    /* контент нам не нужен */
+    position: absolute;
+    /* позиционируем относительно .left-side */
+    height: 70%;
+    /* высота 70% от .left-side */
+    width: 2px;
+    /* ширина 2px */
+    background: #b9951e;
+    right: -30px;
+    /* позиционируем справа + отступ 15px (справа) */
+    top: 50%;
+    /* выравниваем по центру */
+    transform: translateY(-50%);
+    /* выравниваем по центру */
+}
+
+/* Стили правой колонки */
+.right-side {
+    width: 75%;
+    /* занимает 75% общей ширины */
+    margin-left: 75px;
+}
+
+/* Элементы левой колонки: адрес, телефон, email */
+.details {
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Общие стили для иконок */
+.details i {
+    font-size: 40px;
+    /* задаем размер */
+    margin-bottom: 10px;
+}
+
+/* Стили для заголовков левой колонки */
+.topic {    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    margin-bottom: 7px;
+    color: #b9951e;
+}
+
+/* Стили для текста левой колонки */
+
+.text_1,
+.text_2 {    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    color: #b9951e;
+}
+
+/* Заголовок правой колонки */
+
+.topic-text {
+    color: #b9951e;
+    margin-bottom: 10px;    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 24px;
+}
+.topic-text_1 {
+    color: #b9951e;
+}
+
+/* Текст правой колонки */
+.right-side p {
+    margin-bottom: 20px;    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+}
+
+/* Контейнер для input'ов формы */
+.input-box {
+    height: 50px;
+    /* по сути задаем высоту input'а */
+    width: 100%;
+    /* ширина на всю ширину правой колонки (с учетом padding) */
+    margin-bottom: 20px;
+    /* отступаем снизу 20px */
+}
+
+/* Стили для input и textarea (поле сообщение) */
+.input-box input,
+.input-box textarea {
+    height: 100%;
+    /* растягиваем на всю высоту контейнера 50px */
+    width: 100%;
+    /* растягиваем на всю ширину */
+    border: none;
+    /* убираем внешние края */
+    border-radius: 10px;
+    /* скругляем края */
+    background: #e0e0e0;
+    /* задаем цвет фона */
+    padding: 0 20px;
+    /* отступ справа и слева 20px */    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Отдельно стилизуем поле сообщения */
+.input-box textarea {
+    resize: none;
+    /* чтобы нельзя было менять высоту */
+    padding: 20px;
+    /*  font-family: 'Handjet', cursive; */    
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+/* Это контейнер для поля сообщение */
+.message-box {
+    min-height: 120px;
+    /* минимальная высота 120px */
+}
+
+/* Стили для контейнера кнопки */
+.button {
+    display: inline-block;
+    /* делаем блочно-строчный элемент */
+}
+
+/* Стили для самой кнопки */
+.button input[type="button"] {
+    color: #e0e0e0;
+    font-size: 18px;
+    background: #f00e0e;
+    /* outline: none; */
+    border: 1px solid transparent;
+    border-color: #f00e0e;
+    padding: 10px 20px;
+    border-radius: 7px;
+    transition: 0.2s;
+    /* чтобы плавно менялся цвет при наведении (:hover) */
+}
+
+/* Меняем цвет фона при наведении на кнопку */
+.button input[type="button"]:hover {
+    color: #e0e0e0;
+    background: #b9951e;
+}
+
+/* footer settings/настройки нижнего колонтитула */
+
+footer {
+    height: 71px;
+    background-color: #747474;
+}
+
+.container_footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer_roman_grigorev {
+    padding-top: 1%;    
+    padding-left: 40%;
+    font-family: 'Open Sans', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    color: #000000;
+}
+
+.social_icons {
+    padding-right: 150px;
+    display: flex;
+    /* располагаем иконки соцсетей горизонтально */
+    list-style: none;
+    margin-top: 18px;
+}
+
+.social_icons>li {
+    padding-left: 16px;
+    margin-left: 0.25rem;
+    margin-right: 0.25rem;
+}
+
+/* BREAKPOINTS */
+@media (max-width: 1200px) {
+    html {
+        font-size: 55%;
+    }
+}
+    
+@media (max-width: 978px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .footer_roman_grigorev{
+        font-size: 170%;
+    }
+}
+
+@media (max-width: 790px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .footer_roman_grigorev{
+        font-size: 125%;
+    }
+}
+
+@media (max-width: 724px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .footer_roman_grigorev{
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 668px) {
+    #menu-icon {
+        display: block;
+    }
+
+    .social_icons {
+        padding-right: 10px;
+    }
+}
